@@ -1,0 +1,475 @@
+@import 'normalize';
+@import 'variables';
+@import 'base';
+
+/* ==================================== */
+
+*,h1,h2,h3,h4,h5,h6,p,a,ul,ol,li{
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+	list-style: none;
+}
+
+img{
+	max-width: 100%;
+	height: auto;
+}
+body{
+	font-family: @Lato-font-stack;
+	color: @Shuttle-Gray;
+}
+
+
+
+
+/* HEADER */
+
+#header{
+
+	.background{
+		color: white;
+		background: url('../images/elijah.jpg') no-repeat ;
+		background-size: cover;
+		padding: 4% 0;
+		h1{
+			font-family: @Oswald-font-stack;
+			font-size: 6.25em;
+			background: rgba(0, 0, 0, .3);
+			padding: 4% 0;
+		}
+		p{
+			margin-top: 5%;
+			font-size: 20px;
+			font-weight: 900;
+
+		}
+		span{
+			background: @sea-buckthorn;
+			padding: 4px;
+			margin-left: 2px;
+		}
+		i{
+			margin-top: 7%;
+			&:hover{
+				color: @sea-buckthorn;
+			}
+		}
+	}
+
+	#menu{
+		margin-bottom: 2%;
+		border-bottom: 1px solid @Mecury;
+		.text{
+			font-family: @Oswald-font-stack;
+			font-size: 28px;
+			color: @sea-buckthorn;
+			margin: 16% 0 1%;
+
+		}
+		.navbar-default {
+			background: @white;
+			border: 0;
+			padding: 2% 0;
+		}
+
+
+		.navbar-default .navbar-nav > li > a {
+			font-family: @Lato-font-stack;
+			color: @Shuttle-Gray;
+			font-size: 16px;
+			font-weight: bold;
+		}
+		.dropdown-menu > li > a,
+		.navbar-default .navbar-nav > li > a:hover,
+		.navbar-default .navbar-nav > li > a:focus,
+		.navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
+		.navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
+			color: @sea-buckthorn;
+			background-color: @white;
+		}
+
+
+		.dropdown-menu > li > a:hover {
+			color: @sea-buckthorn!important;
+		}
+
+		@media (max-width:@brk-medium){
+			.navbar-default .navbar-nav .open .dropdown-menu> li > a:hover,
+			.dropdown-menu > li > a:hover {
+				color: @sea-buckthorn!important;
+			}
+			.text{
+				padding: 9% 0 0 1%;
+			}
+			#menu{
+				border: 0;
+			}
+		}
+	}
+
+
+}
+
+/* ================================================= */
+
+/* ABOUT */
+#about{
+	position: relative;
+	padding: 6%;
+	box-shadow: 0 10px 50px -10px rgba(0, 0, 0, 0.3);
+	.arroww{
+		position: absolute;
+    	top: 100%;
+    	left: 50%;
+    	transform: translateX(-50%);
+	}
+	h1{
+		font-size: 60px;
+		font-weight: 400;
+		font-family: @Oswald-font-stack;
+		position: relative;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		color: @white;
+		&:before,
+		&:after {
+			content: "";
+			z-index: -10;
+			display: inline-block;
+			width: 160px;
+			height: 160px;
+			border-radius: 50%;
+		}
+
+		&:before {
+			background: @Shuttle-Gray;
+			transform: translateX(90%);
+		}
+
+		&:after {
+			background: @sea-buckthorn;
+			transform: translateX(-90%);
+		}
+
+		@media (max-width:@brk-medium){
+			font-size: 35px;
+		}
+	}
+
+	p{
+		font-size: 24px;
+		margin: 9% 10% 0 10%;
+
+
+	}
+}
+
+
+
+
+/* ================================================= */
+
+/* CONTENTS */
+.contents{
+	background: @wild-sand;
+	padding:  5%;
+	#part1{
+
+		.circle {
+		    width: 50px;
+		    height: 50px;
+		    border-radius: 50%;
+		    font-size: 26px;
+		    color: @white;
+		   	line-height: 50px;
+		    text-align: center;
+		    background: @sea-buckthorn;
+		    margin: 2%;
+		}
+
+		h3{
+			padding: 7%;
+			font-family: @Oswald-font-stack;
+			font-size: 24px;
+		}
+		p{
+			font-size: 14px;
+		}
+	}
+	
+	.line{
+	 	text-align: center;
+	     	position: relative;
+	     	z-index: 1;
+	     	color: @silver;
+	     	margin: 5% 0 3% 0;
+	     	font-size: 14px;
+	    &:before {
+	        border-top: 0.5px solid @silver;
+	        content:"";
+	        margin: 0 auto; 
+	        position: absolute;
+	        top: 50%; left: 0; right: 0; bottom: 0;
+	        width: 95%;
+	       z-index: -1;
+	    }
+	}
+	    
+    span { 
+	    background: @wild-sand; 
+	    padding: 0 15px; 
+	}
+
+	.leftinfo{
+		font-size: 14px;
+	}
+
+    .rightinfo{
+	    .bar{
+	    	font-size:16px!important;
+	    	background-color:@Shuttle-Gray!important;
+
+	    	.barpercent{
+	    		color:#fff!important;
+	    		background-color:@sea-buckthorn!important;
+
+	    	}
+	    	.bar-container{
+	    		padding:1% 16px;
+	    		margin: 1% 0 2% 0;
+	    	}
+	    	.bar-container:after,.bar-container:before{
+	    		content:"";
+	    		display:table;clear:both;
+	    	}
+	    	span{
+	    			
+	    		background: @sea-buckthorn!important;
+	        }
+	    }
+	}
+
+	.part3{
+		h3{
+			font-family: @Oswald-font-stack;
+			font-size: 27px;
+			font-weight:600;
+		}
+
+		.number{
+			h2{
+				font-size: 45px;
+				font-family: @Oswald-font-stack;
+				color: @sea-buckthorn;
+				margin: 15% 0 8% 0 ;
+			}
+			h4{
+				font-size: 18px;
+				font-family: @Oswald-font-stack;
+				margin: 3% 0;
+			}
+
+			p{
+				font-size: 14px;
+				margin: 5% 0;
+			}
+		}
+	}
+}
+
+/* ================================================= */
+
+/* BACKGROUND 1*/
+.row{margin-right: 0px;}
+#quote{
+	background: url(../images/image.jpg) no-repeat;
+	font-size: 27px;
+	padding: 10% 0 10%;
+	background-size: cover;
+	background-attachment: fixed;
+	font-family: @Oswald-font-stack;
+	span{
+		color: @sea-buckthorn;
+		text-align:center;
+	}
+	p{
+		color: @white;
+		font-size: 27px;
+		font-weight: 300;
+	}
+	blockquote{
+		border: 0 ;
+		
+		fa{
+			color: @sea-buckthorn;
+		}
+		cite{
+			font-size: 18px;
+			color: @white;
+
+		}
+
+	}
+	&:before,
+		&:after{
+			color: @white;
+		}
+	footer:before{color: @white ;}
+	
+}
+
+/* ================================================= */
+
+/* OUR TEAM */
+#ourteam{
+	position: relative;
+	padding: 6%;
+	box-shadow: 0 10px 50px -10px rgba(0, 0, 0, 0.3);
+	.arroww{
+		position: absolute;
+    	top: 100%;
+    	left: 50%;
+    	transform: translateX(-50%);
+	}
+	h1{
+		font-size: 60px;
+		font-weight: 400;
+		font-family: @Oswald-font-stack;
+		position: relative;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		color: @white;
+		&:before,
+		&:after {
+			content: "";
+			z-index: -10;
+			display: inline-block;
+			width: 160px;
+			height: 160px;
+			border-radius: 50%;
+		}
+
+		&:before {
+			background: @Shuttle-Gray;
+			transform: translateX(90%);
+		}
+
+		&:after {
+			background: @sea-buckthorn;
+			transform: translateX(-90%);
+		}
+
+		@media (max-width:@brk-medium){
+			font-size: 40px;
+		}
+	}
+
+	p{
+		font-size: 24px;
+		margin: 9% 10% 0 10%;
+
+		span{
+			color: @sea-buckthorn;
+		}
+
+	}
+}
+
+/* ================================================= */
+
+/* TEAM */
+.team{
+	background: @wild-sand;
+	padding:  8% 0;
+
+	#member{
+			h3{
+				font-family: @Oswald-font-stack;
+				font-size: 18px;
+				color: @Shuttle-Gray;
+				margin: 5% 0;
+				font-weight: 550;
+
+				span{
+					font-size: 14px;
+					padding-left: 60%;
+				}
+			}
+			p{
+				font-size:14px;
+			}
+
+	}
+	.line{
+		text-align: center;
+		position: relative;
+		z-index: 1;
+		color: @silver;
+		margin: 7% 0 5% 0;
+		font-size: 14px;
+		&:before {
+			border-top: 0.5px solid @silver;
+			content:"";
+			margin: 0 auto; 
+			position: absolute;
+			top: 50%; left: 0; right: 0; bottom: 0;
+			width: 95%;
+			z-index: -1;
+	    }
+	}
+	span { 
+	    background: @wild-sand; 
+	    padding: 0 15px; 
+	}
+
+	.clients{
+		h3{
+			font-family: @Oswald-font-stack;
+			font-size: 27px;
+			font-weight:600;
+			margin: 0% 0 3% 0;
+		}
+		p{
+			font-size: 14px;
+			margin:0 15%;
+		}
+
+		.workwith{
+			padding: 5% 0;
+			background:@wild-sand;
+
+			.company{
+				margin-top: 2%;
+				-webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    			filter: grayscale(100%);
+    			
+				@media (max-width:@brk-large){
+					img{
+							width: 30%;
+							padding: 3% 0;
+						}
+				}
+
+			}
+			.company2{
+				-webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    			filter: grayscale(100%);
+				@media (max-width:@brk-large){
+					img{
+							width: 30%;
+							padding: 3% 0;
+						}
+				}
+			}
+		}
+	}
+}
+
+
+
+/* ================================================= */
+
+
