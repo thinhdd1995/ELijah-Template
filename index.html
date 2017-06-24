@@ -10,9 +10,14 @@
 	<script src="https://use.fontawesome.com/b72421ded4.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
+		<script>
+		$(document).ready(function(){
+		    $('[data-toggle="tooltip"]').tooltip();   
+		});
+	</script>
 </head>
 <body>
-	<div class="">
+
 	<!-- HEADER -->
 		<div id="header">
 			<!-- BACKGROUND -->
@@ -237,22 +242,43 @@
 				<div class="row">
 					<div class="container">
 						<div class="col-md-4">
-							<a href="#"><img class="img-responsive" src="images/avatar.jpg" alt=""></a>
-						<h3>JOHN DOE<span>Founder</span></h3>
+							<div class="grid">
+								<figure class="effect-avatar">
+									<img  src="images/avatar.jpg" alt="img13"/>
+									<figcaption>
+										<p>VIEW PROFILE</p>
+									</figcaption>			
+								</figure>
+							</div> 
+							<h3>JOHN DOE<span>Founder</span></h3>
 							<p class="justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 							tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
 							quis nostrud exercitation ullamco laboris nisi ut aliquip.</p>
 						</div>
 						<div class="col-md-4">
-							<a href="#"><img class="img-responsive" src="images/avatar.jpg" alt=""></a>
-						<h3>JOHN DOE<span>Founder</span></h3>
+							<div class="grid">
+								<figure class="effect-avatar">
+									<img src="images/avatar.jpg" alt="img13"/>
+									<figcaption>
+										<p>VIEW PROFILE</p>
+									</figcaption>			
+								</figure>
+							</div>    
+							<h3>JOHN DOE<span>Founder</span></h3>
 							<p class="justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 							tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
 							quis nostrud exercitation ullamco laboris nisi ut aliquip.</p>
 						</div>
 						<div class="col-md-4">
-							<a href="#"><img class="img-responsive" src="images/avatar.jpg" alt=""></a>
-						<h3>JOHN DOE<span>Founder</span></h3>
+							<div class="grid">
+								<figure class="effect-avatar">
+									<img src="images/avatar.jpg" alt="img13"/>
+									<figcaption>
+										<p>VIEW PROFILE</p>
+									</figcaption>			
+								</figure>
+							</div>   
+							<h3>JOHN DOE<span>Founder</span></h3>
 							<p class="justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 							tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
 							quis nostrud exercitation ullamco laboris nisi ut aliquip.</p>
@@ -275,22 +301,22 @@
 					<div class="row">
 						<div class="container text-center">
 							<div class="col-md-2 company">
-								<a href="#"><img src="images/ubuntu.png" alt=""></a>
+								<a href="#"><img data-toggle="tooltip" data-placement="bottom" title="UBUNTU" src="images/ubuntu.png" alt=""></a>
 							</div>
 							<div class="col-md-2 company">
-								<a href="#"><img src="images/linux.png" alt=""></a>
+								<a href="#"><img data-toggle="tooltip" data-placement="bottom" title="ARCHLINUX" src="images/linux.png" alt=""></a>
 							</div>
 							<div class="col-md-2 company">
-								<a href="#"><img src="images/soundcloud.png" alt=""></a>
+								<a href="#"><img data-toggle="tooltip" data-placement="bottom" title="SOUND CLOUD" src="images/soundcloud.png" alt=""></a>
 							</div>
 							<div class="col-md-2 company">
-								<a href="#"><img src="images/creative.png" alt=""></a>
+								<a href="#"><img data-toggle="tooltip" data-placement="bottom" title="ARCHLINUX" src="images/creative.png" alt=""></a>
 							</div>
 							<div class="col-md-2 company2">
-								<a href="#"><img src="images/nick.png" alt=""></a>
+								<a href="#"><img data-toggle="tooltip" data-placement="bottom" title="ARCHLINUX" src="images/nick.png" alt=""></a>
 							</div>
 							<div class="col-md-2 company2">
-								<a href="#"><img src="images/dream.png" alt=""></a>
+								<a href="#"><img data-toggle="tooltip" data-placement="bottom" title="ARCHLINUX" src="images/dream.png" alt=""></a>
 							</div>
 						</div>
 					</div>
@@ -300,6 +326,176 @@
 	</div>
 	<!-- CONTENT 2 END -->
 
+	<!-- BACKGROUND 2 -->
+	<div id="slide-quote">
+		<div class="row">
+			<div class="container">
+				<div class="col-md-2"></div>
+				<div class="quote-item text-center col-md-8">
+					<span><i class="fa fa-twitter" aria-hidden="true"></i></span>
+		    		<blockquote>
+		    			<p>Lorem <b style="color: #f89a3d">@elijah</b> dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						tempor incididunt ut labore et dolore.</p>
+						<footer>
+							<cite>Mark Hain<br>
+								<i style="color: #f89a3d;font-family: 'Oswald', sans-serif;font-size: 12px;"> about 1 hour ago</i>
+							</cite>
+						</footer>
+		    		</blockquote>
+				</div>
+				<div class="col-md-2"></div>
+			</div>
+		</div>
 	</div>
+	<!-- BACKGROUND 2 -->
+
+
+	<!--SERVICE START  -->
+	<div id="services">
+			<div class=" text-center">
+				<h1>SERVICE</h1>
+				<p>Lorem ipsum dolor sit amet, consectetur <span>adipisicing elit</span>, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua.</p>
+			</div>
+			<img class="arroww" src="images/arrow.png" alt="">
+	</div>
+	<!-- SERVICE END -->
+	
+	<!-- SERVICE-CONTENT -->
+	<div id="service">
+		<div class="service-content">
+			<div class="row sec">
+				<div class="container">
+					<div class="col-md-6">
+							<img align="left" src="images/clipboard.png" alt="">
+							<div class="texts">
+								<h3>Lorem ipsum dolor</h3>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+								tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+								quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+								consequat. Duis aute irure dolor in reprehenderit.
+								Duis aute irure dolor in reprehenderit.Duis aute irure dolor in reprehenderit.Duis aute irure dolor in reprehenderit.Duis aute irure dolor in reprehenderit.</p>
+							</div>				
+					</div>
+					<div class="col-md-6">
+							<img align="left" src="images/hourglass.png" alt="">
+							<div class="texts">
+								<h3>Lorem ipsum dolor</h3>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+								tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+								quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+								consequat. Duis aute irure dolor in reprehenderit.
+								Duis aute irure dolor in reprehenderit.Duis aute irure dolor in reprehenderit.Duis aute irure dolor in reprehenderit.Duis aute irure dolor in reprehenderit.</p>
+							</div>				
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="container">
+					<div class="col-md-6">
+							<img align="left" src="images/light.png" alt="">
+							<div class="texts">
+								<h3>Lorem ipsum dolor</h3>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+								tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+								quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+								consequat. Duis aute irure dolor in reprehenderit.
+								Duis aute irure dolor in reprehenderit.Duis aute irure dolor in reprehenderit.Duis aute irure dolor in reprehenderit.Duis aute irure dolor in reprehenderit.</p>
+							</div>				
+					</div>
+					<div class="col-md-6">
+							<img align="left" src="images/tablet.png" alt="">
+							<div class="texts">
+								<h3>Lorem ipsum dolor</h3>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+								tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+								quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+								consequat. Duis aute irure dolor in reprehenderit.
+								Duis aute irure dolor in reprehenderit.Duis aute irure dolor in reprehenderit.Duis aute irure dolor in reprehenderit.Duis aute irure dolor in reprehenderit.</p>
+							</div>				
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="container">
+				<p class="line"><span>WHAT CLIENTS SAY ABOUT US</span></p>
+		</div>
+
+		<div id="feedback">
+			<div class="container">
+				<h1>HERE SOME FEEDBACKS WE GOT FROM CLIENTS</h1>
+				<div class="row">
+					<div class="container-fluid">
+						<div class="col-md-3">
+							<p>"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+							tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+							quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+							consequat."</p>
+							<div>
+								<img src="images/ava1.png" alt="">
+								<h4>John Doe</h4>
+								<cite>Co-founder of Freya</cite>
+							</div>
+						</div>
+						<div class="col-md-3 short">
+							<p>"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+							tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam."</p>
+							<div>
+								<img src="images/ava2.png" alt="">
+								<h4>David Doe</h4>
+								<cite>Co-founder of Freya</cite>
+							</div>
+						</div>
+						<div class="col-md-3">
+							<p>"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+							tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+							quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+							consequat."</p>
+							<div>
+								<img src="images/ava3.png" alt="">
+								<h4>Jane Doe</h4>
+								<cite>Co-founder of Freya</cite>
+							</div>
+						</div>
+						<div class="col-md-3 short">
+							<p>"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+							tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam."</p>
+							<div>
+								<img src="images/ava4.png" alt="">
+								<h4>Frank Doe</h4>
+								<cite>Co-founder of Freya</cite>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- SERVICE-CONTENT END -->
+
+	<!-- BACKGROUND 3 -->
+	<div id="tryit">
+		<div class="text-center">
+			<h1>ELIJAH IS AN AMAZING RESPONSIVE ONEPAGE WORDPRESS<br>THEME FOR YOUR BUSINESS</h1>
+			<button class="btn btn-default" type="submit"><i class="fa fa-magic" aria-hidden="true"></i> GIVE IT A TRY</button>
+		</div>
+	</div>
+	<!-- BACKGROUND 3 END -->
+
+	<!-- PORTFOLIO START -->
+	<div id="portfolio">
+			<div class=" text-center">
+				<h1>PORTFOLIO</h1>
+				<p>Lorem ipsum dolor sit amet, consectetur <span>adipisicing elit</span>, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua.</p>
+			</div>
+			<img class="arroww" src="images/arrow.png" alt="">
+	</div>
+	<!--PORTFOLIO  END  -->
+
+	<!-- PORTFOLIO CONTENTS -->
+
+	<!-- PORTFOLIO CONTENTS END -->
 </body>
 </html>
