@@ -907,6 +907,12 @@ body {
   background-attachment: fixed;
   font-family: 'Oswald', sans-serif;
 }
+#slide-quote .carousel-inner {
+  text-align: center;
+}
+#slide-quote .carousel-indicators {
+  top: 100%;
+}
 #slide-quote span {
   color: #f89a3d;
   text-align: center;
