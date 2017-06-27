@@ -1201,6 +1201,46 @@ body {
 #portfolio p span {
   color: #f89a3d;
 }
+#portfolio-gallery {
+  padding: 6% 0 0 0;
+}
+#portfolio-gallery .button-gallery {
+  padding-left: 35%;
+}
+#portfolio-gallery .button-gallery .btn-primary {
+  background: #f89a3d;
+  border-color: #f89a3d;
+  border-radius: 30px;
+  border-bottom: 1px solid #d8802a;
+}
+#portfolio-gallery .button-gallery .btn-primary:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+#portfolio-gallery .button-gallery li {
+  float: left;
+  padding-right: 3%;
+  margin: auto;
+}
+#portfolio-gallery .image-gallery {
+  margin: 4% 0;
+  text-align: center;
+}
+#portfolio-gallery .col-md-3 {
+  padding-right: 0;
+  padding-left: 0;
+}
+@media (max-width: 768px) {
+  #portfolio-gallery #portfolio-gallery {
+    text-align: center;
+  }
+  #portfolio-gallery .btn {
+    font-size: 10px;
+    margin: 4%;
+  }
+}
+.checked {
+  background: coral !important;
+}
 /* ================================================= */
 /* PRICE CONTENT */
 #price {
@@ -1309,7 +1349,7 @@ body {
   font-family: 'Oswald', sans-serif;
   font-size: 18px;
   margin-bottom: 10%;
-  border-color: #ffffff;
+  border: 0;
 }
 #price .pricing2 .list {
   font-family: 'Open Sans', sans-serif;
@@ -1400,7 +1440,7 @@ body {
   font-family: 'Oswald', sans-serif;
   color: #ffffff;
   font-weight: 400;
-  margin: 0 0 10% 0;
+  margin: 2% 0 10% 0;
 }
 #footer .prefooter p {
   font-size: 14px;
