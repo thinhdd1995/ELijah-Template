@@ -7,14 +7,7 @@
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link href="https://fonts.googleapis.com/css?family=Lato|Open+Sans|Oswald" rel="stylesheet">
-	<script src="https://use.fontawesome.com/b72421ded4.js"></script>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-	<script src="js/bootstrap.min.js"></script>
-		<script>
-		$(document).ready(function(){
-		    $('[data-toggle="tooltip"]').tooltip();   
-		});
-	</script>
+
 </head>
 <body>
 
@@ -534,7 +527,68 @@
 	<!--PORTFOLIO  END  -->
 
 	<!-- PORTFOLIO CONTENTS -->
-
+	<div id="portfolio-gallery">
+		<div class="button-gallery">
+			<div class="container">
+			<ul class="js-controls">
+				<li><button class="btn btn-primary checked" type="submit" data-filter="*">ALL</button></li>
+				<li><button class="btn btn-primary" type="submit" data-filter=".web-design">WEB DESIGN</button></li>
+				<li><button class="btn btn-primary" type="submit" data-filter=".branding">BRANDING</button></li>
+				<li><button class="btn btn-primary" type="submit" data-filter=".photography">PHOTOGRAPHY</button></li>
+			</ul>
+			</div>
+		</div>
+			<div class="image-gallery">
+				<div class="row">
+					<div class="container">
+						<div class="col-md-3 gallery-item branding">
+							<img src="images/photo1.jpg"   alt="">
+						</div>
+						<div class=" col-md-3 gallery-item web-design">
+							<img src="images/photo2.jpg"   alt="">
+						</div>
+						<div class="col-md-3 gallery-item branding">
+							<img src="images/photo3.jpg"   alt="">
+						</div>
+						<div class="col-md-3 gallery-item branding photography">
+							<img src="images/photo4.jpg"   alt="">
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="container">
+						<div class="col-md-3 gallery-item branding web-design">
+							<img src="images/photo5.jpg"   alt="">
+						</div>
+						<div class="col-md-3 gallery-item branding">
+							<img src="images/photo6.jpg"  alt="">
+						</div>
+						<div class="col-md-3 gallery-item branding">
+							<img src="images/photo7.jpg"   alt="">
+						</div>
+						<div class="col-md-3 gallery-item photography">
+							<img src="images/photo8.jpg" alt="">
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="container">
+						<div class="col-md-3 gallery-item branding">
+							<img src="images/photo9.jpg"   alt="">
+						</div>
+						<div class="col-md-3 gallery-item photography">
+							<img src="images/photo10.jpg"   alt="">
+						</div>
+						<div class="col-md-3 gallery-item branding web-design">
+							<img src="images/photo11.jpg"  alt="">
+						</div>
+						<div class="col-md-3 gallery-item branding">
+							<img src="images/photo12.jpg"  alt="">
+						</div>
+					</div>
+				</div>
+			</div>
+	</div>
 	<!-- PORTFOLIO CONTENTS END -->
 
 	<!-- PRICE START -->
@@ -630,7 +684,7 @@
 				<div class="col-md-2"></div>
 				<div class="col-md-8 text-center">
 					<h1>KEEP IN TOUCH</h1>
-					<p class="text-center">121 King Street,Melbourne,Victoria</p><p>3000 Austrailia</p>
+					<p class="text-center">121 King Street,Melbourne,Victoria</p><p class="text-center">3000 Austrailia</p>
 					<span>Call Us: +61 6 5929 1838 <i class="fa fa-circle" aria-hidden="true"></i> Email: info@elijah.com</span>
 				</div>
 				<div class="col-md-2"></div>
@@ -801,5 +855,13 @@
 		</div>
 	</div>
 	<!-- FOOTER END -->
+
+	<script src="https://use.fontawesome.com/b72421ded4.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script src="js/isotope.pkgd.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+
+	<script src="js/main.js"></script>
+
 </body>
 </html>
