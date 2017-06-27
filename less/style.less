@@ -810,6 +810,52 @@ body{
 	}
 }
 
+#portfolio-gallery{
+	padding: 6% 0 0 0;
+	.button-gallery{
+	    padding-left: 35%;
+		.btn-primary{
+			background: @sea-buckthorn;
+			border-color: @sea-buckthorn;
+			border-radius: 30px;
+			border-bottom: 1px solid #d8802a;
+			&:hover{
+				box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+			}
+		}
+		li{
+			float: left;
+			padding-right: 3%;
+			margin: auto;
+		}
+		
+
+	}
+	.image-gallery{
+		margin: 4% 0;
+		text-align: center;
+
+		
+	}
+	.col-md-3{
+		padding-right: 0;
+    	padding-left: 0;
+	}
+
+	@media(max-width: @brk-medium){
+		#portfolio-gallery{
+			text-align: center;
+		}
+		.btn{
+			font-size: 10px;
+			margin:4%;
+		}
+	}
+}
+
+.checked {
+	background: coral !important;
+}
 /* ================================================= */
 
 /* PRICE CONTENT */
@@ -926,7 +972,7 @@ body{
 				font-family:@Oswald-font-stack;
 				font-size: 18px;
 				margin-bottom: 10%;
-				border-color: @white;
+				border: 0;
 			}
 
 		.list{
@@ -1029,7 +1075,7 @@ body{
 			font-family: @Oswald-font-stack;
 			color: @white;
 			font-weight: 400;
-			margin: 0 0 10% 0;
+			margin: 2% 0 10% 0;
 		}
 		p{
 				font-size: 14px;
