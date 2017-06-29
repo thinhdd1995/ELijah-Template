@@ -510,6 +510,7 @@ body {
   color: white;
   background: url('../images/elijah.jpg') no-repeat;
   background-size: cover;
+  background-attachment: fixed;
   padding: 4% 0;
 }
 #header .background h1 {
@@ -520,7 +521,7 @@ body {
 }
 #header .background p {
   margin-top: 5%;
-  font-size: 20px;
+  font-size: 26px;
   font-weight: 900;
 }
 #header .background span {
@@ -534,48 +535,87 @@ body {
 #header .background i:hover {
   color: #f89a3d;
 }
-#header #menu {
+#menu {
   margin-bottom: 2%;
   border-bottom: 1px solid #e7e7e7;
 }
-#header #menu .text {
+#menu .row {
+  margin-left: 0;
+  margin-right: 0;
+  background: #ffffff;
+}
+#menu .text {
   font-family: 'Oswald', sans-serif;
   font-size: 28px;
   color: #f89a3d;
   margin: 16% 0 1%;
 }
-#header #menu .navbar-default {
+#menu .navbar-default {
   background: #ffffff;
   border: 0;
   padding: 2% 0;
 }
-#header #menu .navbar-default .navbar-nav > li > a {
-  font-family: 'Lato', sans-serif;
+#menu .nav a:before {
+  content: " ";
+  position: absolute;
+  left: 0%;
+  bottom: 0px;
+  top: 100%;
+  height: 3px;
+  width: 0%;
+  margin-top: 20px;
+  background-color: #f89a3d;
+  transition: width 0.5s ease-in-out;
+}
+#menu .nav a:after {
+  content: " ";
+  position: absolute;
+  right: 0%;
+  top: 100%;
+  bottom: 0;
+  height: 3px;
+  width: 0%;
+  margin-top: 20px;
+  background-color: #f89a3d;
+  transition: width 0.5s ease-in-out;
+}
+#menu .nav a:hover:before,
+#menu .nav a:focus:before {
+  width: 50%;
+}
+#menu .nav a:hover:after,
+#menu .nav a:focus:after {
+  width: 50%;
+}
+@media (max-width: 768px) {
+  #menu .nav a:before,
+  #menu .nav a:after {
+    margin-top: 0;
+  }
+}
+#menu .navbar-default .navbar-nav > li > a {
+  font-family: 'Oswald', sans-serif;
   color: #566065;
-  font-size: 16px;
-  font-weight: bold;
+  font-size: 18px;
+  font-weight: 500;
 }
-#header #menu .dropdown-menu > li > a,
-#header #menu .navbar-default .navbar-nav > li > a:hover,
-#header #menu .navbar-default .navbar-nav > li > a:focus,
-#header #menu .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
-#header #menu .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
+#menu .navbar-default .navbar-nav > li > a:hover {
   color: #f89a3d;
-  background-color: #ffffff;
 }
-#header #menu .dropdown-menu > li > a:hover {
+#menu .dropdown-menu > li > a:hover {
   color: #f89a3d !important;
 }
 @media (max-width: 768px) {
-  #header #menu .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
-  #header #menu .dropdown-menu > li > a:hover {
+  #menu .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
+  #menu .dropdown-menu > li > a:hover {
     color: #f89a3d !important;
   }
-  #header #menu .text {
+  #menu .text {
     padding: 9% 0 0 1%;
   }
-  #header #menu #menu {
-    border: 0;
+  #menu #menu {
+    border: 0px;
+    display: none;
   }
 }
 /* ================================================= */
@@ -644,10 +684,17 @@ body {
   background: #f89a3d;
   margin: 2%;
 }
+.contents #part1 .circle:hover {
+  border: 5px double #ffddbb;
+}
 .contents #part1 h3 {
   padding: 7%;
   font-family: 'Oswald', sans-serif;
   font-size: 24px;
+}
+.contents #part1 h3:hover {
+  color: #f89a3d;
+  cursor: pointer;
 }
 .contents #part1 p {
   font-size: 14px;
@@ -679,26 +726,29 @@ body {
 .contents .leftinfo {
   font-size: 14px;
 }
-.contents .rightinfo .bar {
-  font-size: 16px!important;
+.contents .rightinfo .skill-bar {
   background-color: #566065 !important;
 }
-.contents .rightinfo .bar .barpercent {
-  color: #fff!important;
-  background-color: #f89a3d !important;
+.contents .rightinfo .progress {
+  height: 35px;
 }
-.contents .rightinfo .bar .bar-container {
-  padding: 1% 16px;
-  margin: 1% 0 2% 0;
+.contents .rightinfo .progress .skill {
+  background-color: transparent;
+  font-size: 16px!important;
+  font-weight: 300;
+  line-height: 35px;
+  padding: 0;
+  margin: 0 0 0 20px;
 }
-.contents .rightinfo .bar .bar-container:after,
-.contents .rightinfo .bar .bar-container:before {
-  content: "";
-  display: table;
-  clear: both;
+.contents .rightinfo .progress .skill .val {
+  float: right;
+  font-style: normal;
+  margin: 0 20px 0 0;
 }
-.contents .rightinfo .bar span {
-  background: #f89a3d !important;
+.contents .rightinfo .progress-bar {
+  text-align: left;
+  transition-duration: 3s;
+  background: #f89a3d;
 }
 .contents .part3 h3 {
   font-family: 'Oswald', sans-serif;
@@ -1207,11 +1257,17 @@ body {
 #portfolio-gallery .button-gallery {
   padding-left: 35%;
 }
+#portfolio-gallery .button-gallery .btn {
+  padding: 10px 22px;
+}
 #portfolio-gallery .button-gallery .btn-primary {
   background: #f89a3d;
   border-color: #f89a3d;
   border-radius: 30px;
   border-bottom: 1px solid #d8802a;
+  font-size: 18px;
+  font-weight: 200;
+  font-family: 'Lato', sans-serif;
 }
 #portfolio-gallery .button-gallery .btn-primary:hover {
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -1236,6 +1292,7 @@ body {
   #portfolio-gallery .btn {
     font-size: 10px;
     margin: 4%;
+    text-align: center;
   }
 }
 .checked {
@@ -1514,7 +1571,7 @@ body {
   color: #ffffff;
 }
 @media (max-width: 480px) {
-  #footer {
+  #footer .end-footer {
     text-align: center;
   }
 }
