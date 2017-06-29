@@ -142,18 +142,29 @@
 						</div>
 
 						<div class="col-md-6 rightinfo">
-							 <div class=" bar">
-    							<div class="bar-container barpercent" style="width:90%">HTML/CSS <span style="padding-left: 73%;">90%</span></div>
-  							</div>
-  							<div class=" bar">
-    							<div class="bar-container barpercent" style="width:85%">Graphic Design <span style="padding-left: 65%;">85%</span></div>
-  							</div>
-  							<div class=" bar">
-    							<div class="bar-container barpercent" style="width:70%">Wordpress <span style="padding-left: 65%;">70%</span></div>
-  							</div>
-  							<div class=" bar">
-    							<div class="bar-container barpercent" style="width:95%">Web Design <span style="padding-left: 75%;">95%</span></div>
-  							</div>
+							 <div class="progress skill-bar ">
+                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
+                    <span class="skill">HTML/CSS <i class="val">90%</i></span>
+                </div>
+            </div>
+                
+            <div class="progress skill-bar">
+                <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" >
+                    <span class="skill">Graphic Design <i class="val">85%</i></span>
+                </div>
+            </div>
+            
+            <div class="progress skill-bar">
+                <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">
+                    <span class="skill">Wordpress <i class="val">70%</i></span>
+                </div>
+            </div>  
+            
+            <div class="progress skill-bar">
+                <div class="progress-bar" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100">
+                    <span class="skill">Web Design <i class="val">95%</i></span>
+                </div>
+            </div>  
 						</div>
 					</div>
 				</div>
@@ -166,25 +177,25 @@
 				<div class="row">
 					<div class="container">
 						<div class="col-md-3 text-center number">
-							<h2>386</h2>
+							<h2 class="counter" data-count="386">0</h2>						
 							<h4>PROJECTS COMPLETED</h4>
 							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 							tempor incididunt.</p>
 						</div>
 						<div class="col-md-3 text-center number">
-							<h2>291</h2>
+							<h2 class="counter" data-count="291">0</h2>
 							<h4>CLIENTS SERVED</h4>
 							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 							tempor incididunt.</p>
 						</div>
 						<div class="col-md-3 text-center number">
-							<h2>3925</h2>
+							<h2 class="counter" data-count="3925">0</h2>
 							<h4>SONG PLAYED</h4>
 							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 							tempor incididunt.</p>
 						</div>
 						<div class="col-md-3 text-center number">
-							<h2>6740</h2>
+							<h2 class="counter" data-count="6740">0</h2>
 							<h4>COFFEE CUPS</h4>
 							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 							tempor incididunt.</p>
@@ -529,7 +540,7 @@
 	<!-- PORTFOLIO CONTENTS -->
 	<div id="portfolio-gallery">
 		<div class="button-gallery">
-			<div class="container">
+			<div class="row">
 			<ul class="js-controls">
 				<li><button class="btn btn-primary checked" type="submit" data-filter="*">ALL</button></li>
 				<li><button class="btn btn-primary" type="submit" data-filter=".web-design">WEB DESIGN</button></li>
@@ -561,13 +572,13 @@
 							<img src="images/photo5.jpg"   alt="">
 						</div>
 						<div class="col-md-3 gallery-item branding">
-							<img src="images/photo6.jpg"  alt="">
+							<img src="images/photo6.jpg"   alt="">
 						</div>
 						<div class="col-md-3 gallery-item branding">
 							<img src="images/photo7.jpg"   alt="">
 						</div>
 						<div class="col-md-3 gallery-item photography">
-							<img src="images/photo8.jpg" alt="">
+							<img src="images/photo8.jpg"   alt="">
 						</div>
 					</div>
 				</div>
@@ -580,10 +591,10 @@
 							<img src="images/photo10.jpg"   alt="">
 						</div>
 						<div class="col-md-3 gallery-item branding web-design">
-							<img src="images/photo11.jpg"  alt="">
+							<img src="images/photo11.jpg"   alt="">
 						</div>
 						<div class="col-md-3 gallery-item branding">
-							<img src="images/photo12.jpg"  alt="">
+							<img src="images/photo12.jpg"   alt="">
 						</div>
 					</div>
 				</div>
@@ -859,8 +870,8 @@
 	<script src="https://use.fontawesome.com/b72421ded4.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 	<script src="js/isotope.pkgd.js"></script>
+	<script src="js/jquery.counterup.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
-
 	<script src="js/main.js"></script>
 
 </body>
