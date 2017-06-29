@@ -57,14 +57,8 @@ body{
 			}
 		}
 	}
-}
+
 	#menu{
-		.row{
-			margin-left:0;
-			margin-right:0;
-			background : @white;
-		}
-		margin-bottom: 2%;
 		border-bottom: 1px solid @Mecury;
 		.text{
 			font-family: @Oswald-font-stack;
@@ -73,10 +67,30 @@ body{
 			margin: 16% 0 1%;
 
 		}
+		.navbar{
+			margin-bottom: 12px;
+			@media(max-width:@brk-medium){
+				.navbar-header{
+					.navbar-brand{
+						padding: 5% 0 2% 3%;
+						
+					}
+				}
+			}
+		}
 		.navbar-default {
 			background: @white;
 			border: 0;
-			padding: 2% 0;
+			padding-top:10px;
+			.navbar-brand{
+			    color: #f89a3d;
+			    font-family: @Oswald-font-stack;
+			    float: left;
+			    height: 50px;
+			    padding: 15px 180px 15px 80px;
+			    font-size: 28px;
+			    line-height: 20px;
+			}
 		}
 		.nav{
 			a{
@@ -88,7 +102,7 @@ body{
 			        top: 100%;
 			        height: 3px;
 			        width: 0%;
-			        margin-top: 20px;
+			        margin-top: 12px;
 			        background-color:  @sea-buckthorn;
 			        transition: width 0.5s ease-in-out;
  				}
@@ -100,7 +114,7 @@ body{
 		          bottom: 0;
 		          height: 3px;
 		          width: 0%;
-		          margin-top: 20px;
+		          margin-top: 12px;
 		          background-color:  @sea-buckthorn;
 		          transition: width 0.5s ease-in-out;
 		        }
@@ -148,9 +162,15 @@ body{
 				border: 0px;
 				display: none;
 			}
+			.navbar-brand{
+				padding: 0;
+			}
 		}
+
+	
 	}
 
+}
 /* ================================================= */
 
 /* ABOUT */
@@ -289,7 +309,7 @@ body{
 				.val{
 				    float: right;
 				    font-style: normal;
-				    margin: 0 20px 0 0;
+				    margin: 0 3% 0 0;
 				}
 			}	
 		}
