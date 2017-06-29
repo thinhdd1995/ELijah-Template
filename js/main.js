@@ -49,7 +49,7 @@ $('.counter').each(function() {
 });
 
 
-// 
+// Process bar
  $(document).ready(function() {
       $('.progress .progress-bar').css("width",
                 function() {
@@ -57,3 +57,25 @@ $('.counter').each(function() {
                 }
         )
     });
+
+
+
+
+// menu scroll
+      $(document).ready(function() {
+
+        $(window).scroll(function() {
+          var fromTop = $(document).scrollTop();
+          if ( fromTop > $('#header').height() ) $('.navbar').addClass('navbar-fixed-top');
+          else $('.navbar').removeClass('navbar-fixed-top');
+        });
+
+      });
+
+// button Scroll down 
+$(function() {
+    $('.scroll-down').click (function() {
+      $('html, body').animate({scrollTop: $('div.contents').offset().top }, 'slow');
+      return false;
+    });
+  });
