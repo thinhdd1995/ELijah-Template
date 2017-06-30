@@ -40,30 +40,29 @@
 
             <!-- Collect the nav links, forms, and other content for toggling -->
 	            		<div class="collapse navbar-collapse navbar-ex1-collapse">
-	                <ul class="nav navbar-nav">
-                        <li class="hidden"><a class="page-scroll" href="#page-top"></a>
-                        </li>
-                        <li><a class="page-scroll" class="home" href="#">HOME</a></li>
-                        <li><a class="page-scroll" href="#about">ABOUT</a></li>
-                        <li><a class="page-scroll" href="#ourteam">TEAM</a></li>
-                        <li><a class="page-scroll" href="#services">SERVICES</a></li>
-                        <li><a class="page-scroll" href="#portfolio-gallery">PORTFOLIO</a></li>
-                        <li><a class="page-scroll" href="#price">PRICING</a></li>
-                        <li><a class="page-scroll" href="#">CONTACT</a></li>
-                        <li class="dropdown">
-                            <a class="page-scroll"  href="#" class="dropdown-toggle" data-toggle="dropdown">PAGES<span class="caret"></span></a>
-                                <ul class="dropdown-menu" role="menu">
-                                    <li><a href="#">Plugins 1</a></li>
-                                    <li class="divider"></li>
-                                    <li><a href="#">Plugins 2</a></li>
-                                    <li class="divider"></li>
-                                    <li><a href="#">Plugins 3</a></li>
-                                </ul>
-                        </li>
-                        <li><a class="page-scroll" href="#">BLOG <i class="fa fa-share-square-o" aria-hidden="true"></i></a></li>
-                        <li><a class="page-scroll" href="#"><i class="fa fa-search" aria-hidden="true"></i></a></li>
-
-                    </ul>
+			                <ul class="nav navbar-nav">
+		                        <li class="hidden"><a class="page-scroll" href="#page-top"></a>
+		                        </li>
+		                        <li><a class="page-scroll" class="home" href="#">HOME</a></li>
+		                        <li><a class="page-scroll" href="#about">ABOUT</a></li>
+		                        <li><a class="page-scroll" href="#ourteam">TEAM</a></li>
+		                        <li><a class="page-scroll" href="#services">SERVICES</a></li>
+		                        <li><a class="page-scroll" href="#portfolio-gallery">PORTFOLIO</a></li>
+		                        <li><a class="page-scroll" href="#price">PRICING</a></li>
+		                        <li><a class="page-scroll" href="#">CONTACT</a></li>
+		                        <li class="dropdown">
+		                            <a class="page-scroll"  href="#" class="dropdown-toggle" data-toggle="dropdown">PAGES<span class="caret"></span></a>
+		                                <ul class="dropdown-menu" role="menu">
+		                                    <li><a href="#">Plugins 1</a></li>
+		                                    <li class="divider"></li>
+		                                    <li><a href="#">Plugins 2</a></li>
+		                                    <li class="divider"></li>
+		                                    <li><a href="#">Plugins 3</a></li>
+		                                </ul>
+		                        </li>
+		                        <li><a class="page-scroll" href="#">BLOG <i class="fa fa-share-square-o" aria-hidden="true"></i></a></li>
+		                        <li><a href="#" id="searchtoggl"><i class="fa fa-search" aria-hidden="true"></i></a></li>
+		                    </ul>
             			</div>
             <!-- /.navbar-collapse -->
         			</div>
@@ -72,8 +71,14 @@
 
 			</div>
 			<!-- MENU BAR END -->
-
+			<div id="searchbar" class="clearfix">
+			    <form id="searchform" method="get" action="">
+			        <button type="submit" id="searchsubmit" class="fa fa-search fa-4x"></button>
+			        <input type="search" name="s" id="s" placeholder="Type Keywords Here..." autocomplete="off">
+			    </form>
+    		</div>
 		</div>
+
 	<!-- HEADER END -->
 
 	<!-- ABOUT -->
