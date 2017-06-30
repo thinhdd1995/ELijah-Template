@@ -632,6 +632,57 @@ body {
     padding: 0;
   }
 }
+#searchbar {
+  display: none;
+  margin: 2% 0 1% 30%;
+  width: 40%;
+  height: 62px;
+  border-top: 1px solid #f89a3d;
+  z-index: 9999;
+  background: #ffffff;
+  -webkit-box-shadow: -1px 2px 2px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: -1px 2px 2px rgba(0, 0, 0, 0.2);
+  box-shadow: -1px 2px 2px rgba(0, 0, 0, 0.2);
+}
+#s {
+  margin-left: 15px;
+  display: block;
+  width: 88%;
+  border: 0;
+  outline: none;
+  padding: 0;
+  height: 60px;
+  line-height: 60px;
+  font-size: 2.0em;
+  font-weight: 300;
+  color: #656565;
+  font-style: italic;
+}
+#s::placeholder {
+  color: #c6c9ca;
+}
+#searchsubmit {
+  display: block;
+  float: right;
+  margin-top: 6px;
+  background: none;
+  color: #c6c9ca;
+  border: 0;
+  outline: none;
+  cursor: pointer;
+}
+#searchsubmit:hover {
+  color: #f89a3d;
+}
+@media (max-width: 768px) {
+  #searchbar {
+    width: 100%;
+    margin: 0;
+  }
+  #searchsubmit {
+    font-size: 25px;
+  }
+}
 /* ================================================= */
 /* ABOUT */
 #about {
